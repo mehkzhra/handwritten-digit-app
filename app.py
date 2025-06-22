@@ -31,7 +31,7 @@ class CVAE(torch.nn.Module):
 # --- Load Model ---
 device = torch.device("cpu")
 model = CVAE().to(device)
-model.load_state_dict(torch.load("train_cvae_mnist.ipynb", map_location=device))
+model.load_state_dict(torch.load("cvae_mnist.pth", map_location=device))
 model.eval()
 
 # --- UI ---
